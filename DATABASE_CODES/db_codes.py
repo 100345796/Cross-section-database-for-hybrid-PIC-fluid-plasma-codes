@@ -156,7 +156,14 @@ def interpolate_at_velocity(Database_root, Type, specie1, specie2, process, file
     # As the cross section data is only provided inside a small range, it must be interpolated outside it:
     if E_to_interpolate<Energy_array.min():
         if specie1 == 'e-' or specie2 == 'e-':
-            interpolated_cross_section = 0 # below the threshold energy collisions dont take place
+            if process=='elastic':
+                f_cs = CS_array[1] + (CS_array[0]-CS_array[1])*(E_to_interpolate - Energy_array[1])/(Energy_array[0]-Energy_array[1]) # elastic dont have threshold
+                if f_cs<=0:
+                    interpolated_cross_section=0 # it cannot be negtive
+                else:
+                    interpolated_cross_section=f_cs 
+            else:
+                interpolated_cross_section = 0 # below the threshold energy collisions dont take place
         else:
             f_cs = CS_array[1] + (CS_array[0]-CS_array[1])*(E_to_interpolate - Energy_array[1])/(Energy_array[0]-Energy_array[1]) # ch_e dont have threshold
             if f_cs<=0:
@@ -171,8 +178,6 @@ def interpolate_at_velocity(Database_root, Type, specie1, specie2, process, file
             interpolated_cross_section=0 # it cannot be negtive
         else:
             interpolated_cross_section=f_cs   
-    
-#    interpolated_cross_section = np.interp(E_to_interpolate, Energy_array, Cross_section_array) 
     
     return interpolated_cross_section
 
@@ -489,8 +494,8 @@ def _get_E_and_CS_arrays_from_info(Information):
         Energy_array, Cross_section_array = _from_database(Information['DATA'])
     elif Information['TYPE'] == "Model-Drawin" :  # The Drawin Model was followed
          Energy_array, Cross_section_array = _from_Drawin(Information['DATA'])
-    #elif Information['Type'] == 'Model-Grazynski' : # Grazynski Model was follwed
-         #Energy_array, Cross_section_array = from_Grazynski(Information['DATA'])
+    elif Information['TYPE'] == 'Model-Gryzinski' : # Grazynski Model was follwed
+         Energy_array, Cross_section_array = _from_Gryzinski(Information['DATA'])
         
     return Energy_array, Cross_section_array
 
@@ -532,7 +537,31 @@ def _from_Drawin(DATA):
     Cross_sections = 2.66*np.pi*(a_0**2)*Beta_1*((epsilon_i_H/epsilon_i)**2)*Xi*g
 
     return(Energy_range, Cross_sections)
+
+def _from_Gryzinski(DATA):
     
+    """
+    This function computes the cross section and energy values from the files 
+    that store information following the Gryzinski Model
+    """
+    import numpy as np
+    
+    a_0 = DATA['a_0']['VALUES']
+    epsilon_i_H = DATA['epsilon_i_H']['VALUES']
+    epsilon_i = DATA['epsilon_i']['VALUES']
+    Xi = DATA['Xi']['VALUES']
+    final_E = DATA['Final_E']['VALUES']    
+    Energy_range = np.linspace(epsilon_i, final_E, 200)
+     
+    u = Energy_range/epsilon_i
+    
+    gg = (1+2/3*(1-1/(2*u))*np.log(np.e+(u-1)**(1/2)))    
+    g = ((u-1)/u**2)*((u/(u+1))**(3/2))*((1-1/u)**(1/2))*gg
+        
+    Cross_sections = 4*np.pi*(a_0**2)*((epsilon_i_H/epsilon_i)**2)*Xi*g
+
+    return(Energy_range, Cross_sections)
+        
 ###############################################################################################################
 ###############################################################################################################
 

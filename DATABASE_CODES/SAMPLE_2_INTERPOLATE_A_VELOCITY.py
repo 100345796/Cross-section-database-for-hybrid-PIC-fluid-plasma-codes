@@ -43,12 +43,12 @@ OUTPUT:
 
 Database_root = 'C:/Users/Antonio/Desktop/DATABASE'
 Type = 'BINARY'
-specie1 = 'e-'
-specie2 = 'Xe'
-process = 'i1'
+specie1 = 'Xe'
+specie2 = 'Xe+1'
+process = 'ch_e'
 file_name = ''
 
-Velocity = 2650607.928 # [m/s]
+Velocity = 383.13 # [m/s]
 
 ########### CALL TO THE DATABASE  #####################
 
