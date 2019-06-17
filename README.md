@@ -4,7 +4,8 @@ This repository contains:
 
 - Licence.
 
-- folder DATABASE: which contains the folder tree stucture with all the files of the current collision cross sections stored in the database. Inside this database the are two sections. To navigate inside the database, the most electronegative particle is identified in the first place, then the colliding partner, type of collision process and the .txt file containing the cross section values. The type of processes currently stored in the database are: 
+- folder DATABASE: which contains the folder tree stucture with all the files of the current collision cross sections stored in the database. Inside this database the are two sections. To navigate inside the database, the most electronegative particle is identified in the first place, then the colliding partner, type of collision process and the .txt file containing the cross section values. The type of processes currently stored in the database are:
+
           - i1: ionization of one electron (one electron is freed).
           - i2: ionization of two electron.
           - elastic: elastic collision between particles.
