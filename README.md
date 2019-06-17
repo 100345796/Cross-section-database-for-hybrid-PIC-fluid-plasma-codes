@@ -24,4 +24,4 @@ This repository contains:
         - collision_rate_Maxwellian
         - collision_rate_BiMaxwellian
         
-   Additionally, there are four sample files that describe the four main codes designed to interact with the user of the hybrid code. These describe the objective of the function and provide an explanation of the required inputs and the provided outputs.
+   Additionally, there are four sample files that describe the four main codes designed to interact with the user of the hybrid code. These describe the objective of the function and provide an DETAILED EXPLANATION of the SPECIFIC required inputs and the provided outputs.
