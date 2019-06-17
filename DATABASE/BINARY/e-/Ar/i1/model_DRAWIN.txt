@@ -1,0 +1,65 @@
+'TYPE': 'Model-Drawin'
+
+'RETRIEVAL DATE': 25/03/2019 #(d/m/y)
+
+'ORIGINAL REFERENCE': 'Robert Santos Gutierrez 
+			           June, 2012
+			           CODIGO HIBRIDO AVANZADO DE MOTORES DE PLASMA DE EFECTO HALL  
+			           page 45/46
+					   '
+'COMMENTS': {
+             'PROCESS': 'Ionization e- + Ar --> 2e- Ar+',
+             'SPECIES': e/Ar,
+             'INITIAL STATE': 'Ar +0',
+             'INITIAL # e-': 18,
+             'INITIAL E.C. ': '[Ne] 3s2 3p6',
+             'FINAL STATE': 'Ar +1',
+             'FINAL # e- ': 17,
+             'FINAL E.C. ': '[Ne] 3s2 3p5',
+             'METHOD': 'Drawin Model for first ionization',
+             'DESCRIPTION OF DATA': 'The data provided are the values of the constants needed for the implementation of Drawin model for the computation
+									collision cross-sections (Beta_1 and Beta_2). These values have been obtained experimentally.
+									
+									Drawin Model for first ionization:
+										
+										sigma = 2.66*pi*a_0^2*Beta_1*(epsilon_i_H/epsilon_i)^2*Xi*g(u)
+										where g(u) = (u-1)/u^2*ln(1.25*Beta_2*u)
+									
+										In this model:	a_0 = Bohr radius of Hydrogen atom = 5.292e-11 m
+														epsilon_i_H = ionization energy of Hydrogen = 13.6 eV
+														epsilon_i = ionization energy of the sample of interest
+														Xi = Number of equivalent electrons in the external layer of the sample of interest
+														u = dimensionless energy of the electron = [energy range of interest]/epsilon_i
+									'
+             }
+
+'DATA': {
+         'a_0': {
+                    'UNITS': m,
+                    'VALUES': 5.292e-11
+                    },
+         'epsilon_i_H': {
+                           'UNITS': eV,
+                           'VALUES': 13.6
+                           },
+         'epsilon_i': {
+                       'UNITS': eV,
+                       'VALUES': 15.7596
+                           },
+         'Xi': {
+                'UNITS': dimensionless,
+                'VALUES': 8
+                    },
+         'Beta_1': {
+                    'UNITS': dimensionless,
+                    'VALUES': 0.82
+                    },
+         'Beta_2': {
+                    'UNITS': dimensionless,
+                    'VALUES': 1.0
+                    },
+         'Final_E': {
+                    'UNITS': eV,
+                    'VALUES': 200
+                     }
+        }

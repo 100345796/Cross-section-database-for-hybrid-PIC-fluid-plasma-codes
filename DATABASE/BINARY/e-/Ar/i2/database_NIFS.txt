@@ -1,0 +1,36 @@
+'TYPE': 'Database'
+
+'SOURCE': 'NIFS DATABASE: https://dbshino.nifs.ac.jp.'
+
+'RETRIEVAL DATE': 02/05/2019 #(d/m/y)
+
+'ORIGINAL REFERENCE': 'Stephan, K.$Helm, H.$Mark, T.D.,
+					   Mass spectrometric determination of partial electron impact ionization cross sections of He, Ne, Ar and Kr from threshold up to 180 eV
+					   1980 
+                	   J. Chem. Phys,  
+			           vol. 73 , page 3763'
+
+'COMMENTS': {
+             'PROCESS': 'Ionization e- + Ar --> 3e- Ar+2',
+             'SPECIES': e/Ar,
+             'INITIAL STATE': 'Ar +0',
+             'INITIAL # e-': 18,
+             'INITIAL E.C. ': '[Ne] 3s2 3p6',
+             'FINAL STATE': 'Ar +1',
+             'FINAL # e- ': 16,
+             'FINAL E.C. ': '[Ne] 3s2 3p4',
+             'METHOD': Beam method ,
+             '# OF MEASUREMENTS': 28,
+             'RANGE OF ENERGIES': [45, 1800]
+             }
+
+'DATA': {
+         'ENERGY': {
+                    'UNITS': eV,
+                    'VALUES': [4.500000e+01,5.000000e+01,5.500000e+01,6.000000e+01,6.500000e+01,7.000000e+01,7.500000e+01,8.000000e+01,8.500000e+01,9.000000e+01,9.500000e+01,1.000000e+02,1.050000e+02,1.100000e+02,1.150000e+02,1.200000e+02,1.250000e+02,1.300000e+02,1.350000e+02,1.400000e+02,1.450000e+02,1.500000e+02,1.550000e+02,1.600000e+02,1.650000e+02,1.700000e+02,1.750000e+02,1.800000e+02]
+                    },
+         'CROSS-SECTION': {
+                           'UNITS': cm^2,
+                           'VALUES': [1.000000e-19,1.600000e-18,4.500000e-18,8.200000e-18,1.130000e-17,1.330000e-17,1.440000e-17,1.540000e-17,1.590000e-17,1.620000e-17,1.620000e-17,1.680000e-17,1.700000e-17,1.710000e-17,1.720000e-17,1.730000e-17,1.720000e-17,1.720000e-17,1.730000e-17,1.710000e-17,1.700000e-17,1.670000e-17,1.650000e-17,1.620000e-17,1.600000e-17,1.580000e-17,1.560000e-17,1.530000e-17]
+                           }
+        }

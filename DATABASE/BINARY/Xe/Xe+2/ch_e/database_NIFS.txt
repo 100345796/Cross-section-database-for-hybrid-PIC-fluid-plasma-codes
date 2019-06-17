@@ -1,0 +1,36 @@
+'TYPE': 'Database'
+
+'SOURCE': 'NIFS DATABASE: https://dbshino.nifs.ac.jp.'
+
+'RETRIEVAL DATE': 01/04/2019 #(d/m/y)
+
+'ORIGINAL REFERENCE': ' Koizumi, T.$Okuno, K.$Kobayashi, N.$Kaneko, Y. ,
+                       Drift Tube Study of Symmetric Resonance Single- and Double-Charge Transfer in Kr+ +Kr, Xe++ Xe,Kr+++Kr, and Xe+++Xe Systems ,
+					  Phys. Rev. Lett.,
+					  vol. 51 pp 2650-2656,
+					  1982'
+
+'COMMENTS': {
+             'PROCESS': 'Charge Exchange Xe + Xe+2 --> Xe+2 + Xe',
+             'SPECIES': 'Xe/Xe+2',
+             'INITIAL STATE': 'Xe / Xe +2',
+             'INITIAL # e-': '54 / 52',
+             'INITIAL E.C. ': '[Kr] 4d10 5s2 5p6 / [Kr] 4d10 5s2 5p4',
+             'FINAL STATE': 'Xe +2 / Xe',
+             'FINAL # e- ': '52 / 54',
+             'FINAL E.C. ': '[Kr] 4d10 5s2 5p4 / [Kr] 4d10 5s2 5p6',
+             'METHOD': 'DT',
+             '# OF MEASUREMENTS': 18,
+             'RANGE OF ENERGIES': [1.7952e-2, 7.6568]
+             }
+
+'DATA': {
+         'ENERGY': {
+                    'UNITS': eV,
+                    'VALUES': [1.795200e-02,2.298400e-02,3.100800e-02,3.903200e-02,5.004800e-02,6.201600e-02,9.098400e-02,1.270240e-01,2.189600e-01,3.386400e-01,4.828000e-01,7.520800e-01,1.229440e+00,1.781600e+00,2.475200e+00,3.794400e+00,5.521600e+00,7.656800e+00]
+                    },
+         'CROSS-SECTION': {
+                           'UNITS': cm^2,
+                           'VALUES': [2.530000e-14,2.110000e-14,1.960000e-14,1.660000e-14,1.440000e-14,1.290000e-14,1.040000e-14,9.220000e-15,8.210000e-15,6.330000e-15,5.140000e-15,4.220000e-15,3.420000e-15,3.620000e-15,3.060000e-15,2.780000e-15,2.910000e-15,2.690000e-15]
+                           }
+        }

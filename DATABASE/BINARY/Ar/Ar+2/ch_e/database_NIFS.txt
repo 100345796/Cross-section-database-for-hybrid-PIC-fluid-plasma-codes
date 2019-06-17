@@ -1,0 +1,36 @@
+'TYPE': 'Database'
+
+'SOURCE': 'NIFS DATABASE: https://dbshino.nifs.ac.jp.'
+
+'RETRIEVAL DATE': 11/06/2019 #(d/m/y)
+
+'ORIGINAL REFERENCE': 'Okuno, K.,
+                      Charge Transfer of Ar2+ and Kr2+ in Their Own Gases Studied by the Beam Guide Technique ,
+					  J. Phys. Soc. Jpn,
+					  vol. 55 pp 1504-1515,
+					  1986'
+
+'COMMENTS': {
+             'PROCESS': 'Charge Exchange Ar + Ar+2 --> Ar+2 + Ar',
+             'SPECIES': 'Ar/Ar+2',
+             'INITIAL STATE': 'Ar / Ar +2',
+             'INITIAL # e-': '18 / 16',
+             'INITIAL E.C. ': '[Ne] 3s2 3p6 / [Ne] 3s2 3p4',
+             'FINAL STATE': 'Ar +2 / Ar',
+             'FINAL # e- ': '16 / 18',
+             'FINAL E.C. ': '[Ne] 3s2 3p4 / [Ne] 3s2 3p6',
+             'METHOD': 'BA-GR',
+             '# OF MEASUREMENTS': 30,
+             'RANGE OF ENERGIES': [8, 1000]
+             }
+
+'DATA': {
+         'ENERGY': {
+                    'UNITS': 'eV',
+                    'VALUES': [8.000000e-01,1.520000e+00,2.200000e+00,3.000000e+00,4.000000e+00,6.000000e+00,8.000000e+00,9.200000e+00,1.000000e+01,1.400000e+01,2.000000e+01,3.000000e+01,4.000000e+01,5.000000e+01,6.000000e+01,7.000000e+01,8.000000e+01,1.200000e+02,1.400000e+02,1.600000e+02,2.000000e+02,2.400000e+02,3.000000e+02,4.000000e+02,5.000000e+02,6.000000e+02,7.000000e+02,8.000000e+02,1.000000e+03]
+                    },
+         'CROSS-SECTION': {
+                           'UNITS': 'cm^2',
+                           'VALUES': [3.790000e-15,3.090000e-15,2.820000e-15,2.890000e-15,2.800000e-15,2.380000e-15,2.660000e-15,2.590000e-15,2.550000e-15,2.410000e-15,2.140000e-15,2.290000e-15,2.110000e-15,1.890000e-15,2.010000e-15,1.790000e-15,1.780000e-15,2.100000e-15,1.670000e-15,1.680000e-15,1.600000e-15,1.570000e-15,1.760000e-15,1.560000e-15,1.340000e-15,1.460000e-15,1.460000e-15,1.260000e-15,1.380000e-15]
+                           }
+        }

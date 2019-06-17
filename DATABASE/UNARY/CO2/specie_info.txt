@@ -1,0 +1,7 @@
+'MASS':  7.3065e-26 #[kg/molecule]
+
+'ATOMIC NUMBER': 44
+
+'# VALENCE ELECTRONS': 8 
+
+'FIRST IONIZATION ENERGY': 13.777 #[eV]

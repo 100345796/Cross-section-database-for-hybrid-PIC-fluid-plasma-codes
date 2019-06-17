@@ -1,0 +1,36 @@
+'TYPE': 'Database'
+
+'SOURCE': 'NIFS DATABASE: https://dbshino.nifs.ac.jp.'
+
+'RETRIEVAL DATE': 12/06/2019 #(d/m/y)
+
+'ORIGINAL REFERENCE': 'Gilbody, H.B.$Hasted, J.B.,
+                      Anomalies in the adiabatic interpretation of charge-transfer collisions,
+					  Proc. R. Soc. London A ,
+					  vol. 238 pp 334,
+					  1956'
+
+'COMMENTS': {
+             'PROCESS': 'Charge Exchange Ar+ + Kr --> Ar + Kr+',
+             'SPECIES': 'Ar+/Kr',
+             'INITIAL STATE': 'Ar + 1 / Kr',
+             'INITIAL # e-': '17 / 36',
+             'INITIAL E.C. ': '[Ne] 3s2 3p5 / [Ar] 3d10 4s2 4p6',
+             'FINAL STATE': 'Ar / Kr + 1',
+             'FINAL # e- ': '18 / 35',
+             'FINAL E.C. ': '[Ne] 3s2 3p6 / [Ar] 3d10 4s2 4p5',
+             'METHOD': 'GM',
+             '# OF MEASUREMENTS': 15,
+             'RANGE OF ENERGIES': [104.4, 32440]
+             }
+
+'DATA': {
+         'ENERGY': {
+                    'UNITS': 'eV',
+                    'VALUES': [1.044000e+02,4.040000e+02,9.040000e+02,1.600000e+03,2.492000e+03,7.200000e+03,1.004000e+04,1.036000e+04,1.224000e+04,1.696000e+04,1.964000e+04,2.276000e+04,2.596000e+04,2.876000e+04,3.244000e+04]
+                    },
+         'CROSS-SECTION': {
+                           'UNITS': 'cm^2',
+                           'VALUES': [1.780000e-16,1.390000e-16,9.550000e-17,8.920000e-17,1.030000e-16,1.130000e-16,2.500000e-16,2.920000e-16,3.710000e-16,4.780000e-16,5.550000e-16,5.300000e-16,5.340000e-16,4.920000e-16,4.420000e-16]
+                           }
+        }

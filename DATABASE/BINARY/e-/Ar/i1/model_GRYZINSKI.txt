@@ -1,0 +1,58 @@
+'TYPE': 'Model-Gryzinski'
+
+'RETRIEVAL DATE': 25/03/2019 #(d/m/y)
+
+'ORIGINAL REFERENCE': 'Mitchner, M and Charles H. Kruger 
+			           1973
+			           Partially ionized gases  
+			           New York: Wiley
+					   '
+'COMMENTS': {
+             'PROCESS': 'Ionization e- + Ar --> 2e- Ar+',
+             'SPECIES': e/Ar,
+             'INITIAL STATE': 'Ar +0',
+             'INITIAL # e-': 18,
+             'INITIAL E.C. ': '[Ne] 3s2 3p6',
+             'FINAL STATE': 'Ar +1',
+             'FINAL # e- ': 17,
+             'FINAL E.C. ': '[Ne] 3s2 3p5',
+             'METHOD': 'Gryzinski Model for first ionization',
+             'DESCRIPTION OF DATA': 'The data provided are the values of the constants needed for the implementation of Gryzinski model for the computation
+									collision cross-sections.
+									
+									Gryzinski Model for first ionization:
+										
+										sigma = 4*pi*a_0^2*(epsilon_i_H/epsilon_i)^2*Xi*g(u,1)
+										where g(u,1) = (u-1)/u^2*(u/(u+1))^(3/2)*(1-1/u)^(1/2)*gg(u,1);
+										where gg(u,1) = (1+2/3*(1-1/(2*u))*ln(e+(u-1)^(1/2)))
+									
+										In this model:	a_0 = Bohr radius of Hydrogen atom = 5.292e-11 m
+														epsilon_i_H = ionization energy of Hydrogen = 13.6 eV
+														epsilon_i = ionization energy of the sample of interest
+														Xi = Number of equivalent electrons in the external layer of the sample of interest
+														u = dimensionless energy of the electron = [energy range of interest]/epsilon_i
+									'
+             }
+
+'DATA': {
+         'a_0': {
+                    'UNITS': m,
+                    'VALUES': 5.292e-11
+                    },
+         'epsilon_i_H': {
+                           'UNITS': eV,
+                           'VALUES': 13.6
+                           },
+         'epsilon_i': {
+                       'UNITS': eV,
+                       'VALUES': 15.7596
+                           },
+         'Xi': {
+                'UNITS': dimensionless,
+                'VALUES': 8
+                    },
+         'Final_E': {
+                    'UNITS': eV,
+                    'VALUES': 200
+                     }
+        }

@@ -1,0 +1,48 @@
+'TYPE': 'Database'
+
+'SOURCE': 'NIFS DATABASE: https://dbshino.nifs.ac.jp.'
+
+'RETRIEVAL DATE': '25/03/2019' #(d/m/y)
+
+'ORIGINAL REFERENCE': 'Wetzel, R.C. & Baiocchi, F.A. & Hayes, T.R. & Freund, R.S. 
+			           1987
+			           Absolute cross sections for electron-impact ionization of the rare-gas atoms by the fast-neutral-beam method
+			           Phys. Rev. A,  
+			           vol. and issue 35, page 559'
+
+'COMMENTS': {
+             'PROCESS': 'Ionization e- + Xe --> 2e- + Xe+',
+             'SPECIES': 'e/Xe',
+             'INITIAL STATE': 'Xe +0',
+             'INITIAL # e-': 54,
+             'INITIAL E.C. ': '[Kr] 4d10 5s2 5p6',
+             'FINAL STATE': 'Xe +1',
+             'FINAL # e- ': 53,
+             'FINAL E.C. ': '[Kr] 4d10 5s2 5p5',
+             'METHOD': Crossed beam method,
+             '# OF MEASUREMENTS': 32,
+             'RANGE OF ENERGIES': [12, 200]
+             }
+
+'DATA': {
+         'ENERGY': {
+                    'UNITS': 'eV',
+                    'VALUES': [1.200000e+01, 1.300000e+01, 1.400000e+01, 1.600000e+01, 1.800000e+01,
+                                     2.000000e+01, 2.200000e+01, 2.400000e+01, 2.600000e+01, 2.800000e+01,
+                                     3.000000e+01, 3.200000e+01, 3.400000e+01, 3.600000e+01, 3.800000e+01,
+                                     4.000000e+01, 5.000000e+01, 6.000000e+01, 7.000000e+01, 7.500000e+01,
+                                     9.000000e+01, 1.000000e+02, 1.100000e+02, 1.200000e+02, 1.300000e+02,
+                                     1.400000e+02, 1.500000e+02, 1.600000e+02, 1.700000e+02, 1.800000e+02,
+                                     1.900000e+02, 2.000000e+02]
+                    },
+         'CROSS-SECTION': {
+                           'UNITS': 'cm^2',
+                           'VALUES': [1.000000e-17, 3.100000e-17, 6.300000e-17, 1.350000e-16, 1.930000e-16,
+                                            2.420000e-16, 2.910000e-16, 3.300000e-16, 3.590000e-16, 3.890000e-16,
+                                            4.130000e-16, 4.330000e-16, 4.510000e-16, 4.620000e-16, 4.720000e-16,
+                                            4.800000e-16, 4.840000e-16, 4.890000e-16, 4.960000e-16, 4.980000e-16,
+                                            4.920000e-16, 4.840000e-16, 4.770000e-16, 4.630000e-16, 4.550000e-16,
+                                            4.460000e-16, 4.380000e-16, 4.300000e-16, 4.240000e-16, 4.160000e-16,
+                                            4.080000e-16, 4.030000e-16]
+                           }
+        }

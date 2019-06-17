@@ -1,0 +1,60 @@
+'TYPE': 'Database'
+
+'SOURCE': 'lXCAT DATABASE: https://fr.lxcat.net/home/'
+
+'RETRIEVAL DATE': 05/05/2019 #(d/m/y)
+
+'ORIGINAL REFERENCE': "IST-Lisbon database,
+                      www.lxcat.net/IST-Lisbon,
+					  LL Alves and V Guerra
+                  e-mail: llalves@@tecnico.ulisboa.pt,
+				  L.L. Alves, ''The IST-Lisbon database on LXCat'' J. Phys. Conf. Series 2014, 565, 1
+				  IST-Lisbon database contains up-to-date electron-neutral scattering cross sections (together with the
+                  measured swarm parameters used to validate these data), resulting from the research effort of the
+                  Group N-Plasmas Reactive: Modelling and Engineering (N-PRiME) with IPFN/IST (Instituto de Plasmas e
+                  Fusao Nuclear / Instituto Superior Tecnico), Lisbon, Portugal. The data, compiled from the literature,
+                  correspond to contributions from different authors (see detailed references in the database). For each
+                  gas the database presents a COMPLETE SET of cross sections, validated against measured swarm
+                  parameters by solving the two-term homogeneous electron Boltzmann equation. In most cases, predictions
+                  are in agreement with measurements within 1-20%, for reduced electric fields E/N ~ 1e-4 - 500 Td. To
+                  improve predictions at low E/N, some sets need to be completed with rotational cross sections, also
+                  available in the database."
+
+'COMMENTS': {
+             'PROCESS': 'Ionization e- + CO2 --> 2e- + CO2+',
+             'SPECIES': e/CO2,
+             'INITIAL STATE': 'CO2 +0',
+             'INITIAL # e-': 22,
+             'INITIAL E.C. ': 'N/A',
+             'FINAL STATE': 'CO2 +1',
+             'FINAL # e- ': 21,
+             'FINAL E.C. ': 'N/A',
+             'METHOD': "M. Grofulovic, L.L. Alves and V. Guerra ''Electron-neutral scattering cross sections for CO2: a complete and consistent
+         set and an assessment of dissociation'' 2016 J. Phys. D: Appl. Phys. 49 395207 1-12. The set includes 17 cross sections
+         defined up to 1 keV, and it was compiled mostly from Lowke et al with the following modifications: (i) the cross section
+         for superelastic collisions with the first level of the bending mode was included and should be considered as part of
+         the set (see below) (ii) the cross section for the electronic excitation at 10.5 eV and for the ionization were
+         extended up to 1 keV and replaced by the total ionization cross section from Itikawa, respectively (iii) the effective
+         momentum-transfer cross section was increased below 0.1 eV and adjusted above 100 eV, to compensate for the
+         modifications (i) and (ii) (iv) the cross sections corresponding to the excitation of (0n0)+(n00) vibrational levels
+         were deconvoluted into separate modes, using the spectroscopic constants reported by Fridman and the works of Celiberto
+         et al.
+         The cross sections were defined adopting piecewise linear interpolation when used in a two-term Boltzmann solver they
+         yield swarm parameters in good agreement with measurements (within 1% and 8%, depending on the parameters and E/N
+         regions), for reduced electric fields up to 1000 Td. At low E/N, the good agreement requires considering also the (010)
+         -> (000) superelastic transition, assuming the (010) level in Boltzmann equilibrium at gas temperature (with 0.083 eV
+         excitation energy and statistical weight of 2 corresponding to a relative population of 0.076 at 300 K).",
+             '# OF MEASUREMENTS': 59,
+             'RANGE OF ENERGIES': [13.8, 1000]
+             }
+
+'DATA': {
+         'ENERGY': {
+                    'UNITS': eV,
+                    'VALUES': [1.380000e+1,1.450000e+1,1.500000e+1,1.550000e+1,1.600000e+1,1.650000e+1,1.700000e+1,1.750000e+1,1.800000e+1,1.850000e+1,1.900000e+1,1.950000e+1,2.100000e+1,2.150000e+1,2.200000e+1,2.250000e+1,2.300000e+1,2.350000e+1,2.400000e+1,2.500000e+1,3.000000e+1,3.500000e+1,4.000000e+1,4.500000e+1,5.000000e+1,5.500000e+1,6.000000e+1,6.500000e+1,7.000000e+1,7.500000e+1,8.000000e+1,8.500000e+1,9.000000e+1,9.500000e+1,1.000000e+2,1.100000e+2,1.200000e+2,1.400000e+2,1.600000e+2,1.800000e+2,2.000000e+2,2.250000e+2,2.500000e+2,2.750000e+2,3.000000e+2,3.500000e+2,4.000000e+2,4.500000e+2,5.000000e+2,5.500000e+2,6.000000e+2,6.500000e+2,7.000000e+2,7.500000e+2,8.000000e+2,8.500000e+2,9.000000e+2,9.500000e+2,1.000000e+3]
+                    },
+         'CROSS-SECTION': {
+                           'UNITS': m^2,
+                           'VALUES': [0.000000e+0,5.500000e-22,9.700000e-22,1.350000e-21,1.740000e-21,2.150000e-21,2.550000e-21,2.930000e-21,3.330000e-21,3.730000e-21,4.280000e-21,4.520000e-21,5.770000e-21,6.230000e-21,6.760000e-21,7.270000e-21,7.770000e-21,8.280000e-21,8.800000e-21,1.040000e-20,1.580000e-20,1.950000e-20,2.250000e-20,2.500000e-20,2.710000e-20,2.880000e-20,3.060000e-20,3.180000e-20,3.270000e-20,3.360000e-20,3.450000e-20,3.510000e-20,3.560000e-20,3.600000e-20,3.640000e-20,3.660000e-20,3.660000e-20,3.630000e-20,3.520000e-20,3.430000e-20,3.320000e-20,3.210000e-20,3.050000e-20,2.970000e-20,2.820000e-20,2.580000e-20,2.430000e-20,2.230000e-20,2.090000e-20,1.960000e-20,1.850000e-20,1.760000e-20,1.680000e-20,1.610000e-20,1.530000e-20,1.450000e-20,1.410000e-20,1.360000e-20,1.300000e-20]
+                           }
+        }

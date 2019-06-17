@@ -1,0 +1,36 @@
+'TYPE': 'Database'
+
+'SOURCE': 'NIFS DATABASE: https://dbshino.nifs.ac.jp.'
+
+'RETRIEVAL DATE': 10/06/2019 #(d/m/y)
+
+'ORIGINAL REFERENCE': 'Belic, D.S.$Lecointre, J.$Defrance, P. ,
+					   Electron impact multiple ionization of argon ions 
+					   2010
+                	    J. Phys. B ,  
+			           vol. 43 , page 185203'
+
+'COMMENTS': {
+             'PROCESS': 'Ionization e- + Ar+1 --> 2e- Ar+2',
+             'SPECIES': e/Ar,
+             'INITIAL STATE': 'Ar +1',
+             'INITIAL # e-': 17,
+             'INITIAL E.C. ': '[Ne] 3s2 3p5',
+             'FINAL STATE': 'Ar +1',
+             'FINAL # e- ': 16,
+             'FINAL E.C. ': '[Ne] 3s2 3p4',
+             'METHOD': Beam method ,
+             '# OF MEASUREMENTS': 28,
+             'RANGE OF ENERGIES': [25.1, 2495.1]
+             }
+
+'DATA': {
+         'ENERGY': {
+                    'UNITS': eV,
+                    'VALUES': [2.510000e+01,2.710000e+01,2.910000e+01,3.110000e+01,3.310000e+01,3.510000e+01,3.710000e+01,4.010000e+01,4.510000e+01,5.510000e+01,6.510000e+01,7.510000e+01,8.510000e+01,9.510000e+01,1.151000e+02,1.351000e+02,1.551000e+02,1.951000e+02,2.451000e+02,2.951000e+02,3.951000e+02,4.951000e+02,5.951000e+02,7.951000e+02,9.951000e+02,1.495100e+03,1.995100e+03,2.495100e+03]
+                    },
+         'CROSS-SECTION': {
+                           'UNITS': cm^2,
+                           'VALUES': [0.000000e+00,5.000000e-19,1.200000e-17,3.000000e-17,5.100000e-17,6.400000e-17,7.700000e-17,9.200000e-17,1.010000e-16,1.120000e-16,1.180000e-16,1.230000e-16,1.250000e-16,1.260000e-16,1.240000e-16,1.190000e-16,1.140000e-16,1.030000e-16,9.200000e-17,8.400000e-17,7.100000e-17,6.100000e-17,5.400000e-17,4.300000e-17,3.700000e-17,2.700000e-17,2.200000e-17,1.800000e-17]
+                           }
+        }

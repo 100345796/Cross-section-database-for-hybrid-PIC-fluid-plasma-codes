@@ -1,0 +1,36 @@
+'TYPE': 'Database'
+
+'SOURCE': 'NIFS DATABASE: https://dbshino.nifs.ac.jp.'
+
+'RETRIEVAL DATE': 25/03/2019 #(d/m/y)
+
+'ORIGINAL REFERENCE': 'Wetzel, R.C.; Baiocchi, F.A.; Hayes, T.R.; Freund, R.S.,
+                      Absolute cross sections for electron-impact ionization of the rare-gas atoms by the fast-neutral-beam method,
+					  Phys. Rev. A,
+					  vol. 35 pp 559,
+					  1987'
+
+'COMMENTS': {
+             'PROCESS': 'Ionization e- + Kr --> 2e- + Kr+',
+             'SPECIES': e/Kr,
+             'INITIAL STATE': 'Kr +0',
+             'INITIAL # e-': 36,
+             'INITIAL E.C. ': '[Ar] 3d10 4s2 4p6',
+             'FINAL STATE': 'Kr +1',
+             'FINAL # e- ': 35,
+             'FINAL E.C. ': '[Ar] 3d10 4s2 4p5',
+             'METHOD': 'Crossed beam method',
+             '# OF MEASUREMENTS': 31,
+             'RANGE OF ENERGIES': [13, 200]
+             }
+
+'DATA': {
+         'ENERGY': {
+                    'UNITS': eV,
+                    'VALUES': [1.300000e+01,1.400000e+01,1.600000e+01,1.800000e+01,2.000000e+01,2.200000e+01,2.400000e+01,2.600000e+01,2.800000e+01,3.000000e+01,3.200000e+01,3.400000e+01,3.600000e+01,3.800000e+01,4.000000e+01,5.000000e+01,6.000000e+01,7.000000e+01,8.000000e+01,9.000000e+01,1.000000e+02,1.100000e+02,1.200000e+02,1.300000e+02,1.400000e+02,1.500000e+02,1.600000e+02,1.700000e+02,1.800000e+02,1.900000e+02,2.000000e+02]
+                    },
+         'CROSS-SECTION': {
+                           'UNITS': 'cm^2',
+                           'VALUES': [1.000000e-18,5.000000e-18,3.500000e-17,7.600000e-17,1.160000e-16,1.480000e-16,1.800000e-16,2.100000e-16,2.410000e-16,2.600000e-16,2.800000e-16,2.980000e-16,3.120000e-16,3.250000e-16,3.370000e-16,3.600000e-16,3.680000e-16,3.700000e-16,3.670000e-16,3.610000e-16,3.540000e-16,3.490000e-16,3.440000e-16,3.390000e-16,3.340000e-16,3.280000e-16,3.250000e-16,3.210000e-16,3.160000e-16,3.100000e-16,3.040000e-16]
+                           }
+        }
