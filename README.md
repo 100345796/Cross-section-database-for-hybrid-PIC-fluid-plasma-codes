@@ -16,7 +16,8 @@ This repository contains:
        
 - A .xlsx file showing the current status of the database in a grafical way. This provides a direct view of what collisions are alrready stored.
 
-- folder DATABASE_CODES: which contains the complementary codes of the database to allow communicotion with hybrid PIC/fluid codes. Inside this folder all the code functions are stored in the file: db_codes.py . Four main functions are designed to be called by the user:                 - get_collision_info
+- folder DATABASE_CODES: which contains the complementary codes of the database to allow communicotion with hybrid PIC/fluid codes. Inside this folder all the code functions are stored in the file: db_codes.py . Four main functions are designed to be called by the user:                 
+        - get_collision_info
         - interpolate_at_velocity
         - collision_rate_Maxwellian
         - collision_rate_BiMaxwellian
