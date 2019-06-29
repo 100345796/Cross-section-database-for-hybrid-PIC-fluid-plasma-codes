@@ -41,7 +41,7 @@ OUTPUT:
 """
 ########### INPUTS REQUIRED ###########################
 
-Database_root = 'C:/Users/Antonio/Desktop/DATABASE'
+Database_root = '/home/javier/Documentos/DATABASE'
 Type = 'BINARY'
 specie1 = 'e-'
 specie2 = 'Kr'
