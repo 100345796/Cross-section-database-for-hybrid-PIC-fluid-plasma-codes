@@ -523,17 +523,17 @@ def _from_Drawin(DATA):
     a_0 = DATA['a_0']['VALUES']
     epsilon_i_H = DATA['epsilon_i_H']['VALUES']
     epsilon_i = DATA['epsilon_i']['VALUES']
-    Xi = DATA['Xi']['VALUES']
-    Beta_1 = DATA['Beta_1']['VALUES']
-    Beta_2  =DATA['Beta_2']['VALUES']
+    xi = DATA['xi']['VALUES']
+    beta_1 = DATA['beta_1']['VALUES']
+    beta_2  =DATA['beta_2']['VALUES']
     final_E = DATA['Final_E']['VALUES']    
     Energy_range = np.linspace(epsilon_i, final_E, 200)
      
     u = Energy_range/epsilon_i
         
-    g = ((u-1)/(u**2))*np.log(1.25*Beta_2*u)
+    g = ((u-1)/(u**2))*np.log(1.25*beta_2*u)
         
-    Cross_sections = 2.66*np.pi*(a_0**2)*Beta_1*((epsilon_i_H/epsilon_i)**2)*Xi*g
+    Cross_sections = 2.66*np.pi*(a_0**2)*beta_1*((epsilon_i_H/epsilon_i)**2)*xi*g
 
     return(Energy_range, Cross_sections)
 
@@ -548,7 +548,7 @@ def _from_Gryzinski(DATA):
     a_0 = DATA['a_0']['VALUES']
     epsilon_i_H = DATA['epsilon_i_H']['VALUES']
     epsilon_i = DATA['epsilon_i']['VALUES']
-    Xi = DATA['Xi']['VALUES']
+    xi = DATA['xi']['VALUES']
     final_E = DATA['Final_E']['VALUES']    
     Energy_range = np.linspace(epsilon_i, final_E, 200)
      
@@ -557,7 +557,7 @@ def _from_Gryzinski(DATA):
     gg = (1+2/3*(1-1/(2*u))*np.log(np.e+(u-1)**(1/2)))    
     g = ((u-1)/u**2)*((u/(u+1))**(3/2))*((1-1/u)**(1/2))*gg
         
-    Cross_sections = 4*np.pi*(a_0**2)*((epsilon_i_H/epsilon_i)**2)*Xi*g
+    Cross_sections = 4*np.pi*(a_0**2)*((epsilon_i_H/epsilon_i)**2)*xi*g
 
     return(Energy_range, Cross_sections)
         

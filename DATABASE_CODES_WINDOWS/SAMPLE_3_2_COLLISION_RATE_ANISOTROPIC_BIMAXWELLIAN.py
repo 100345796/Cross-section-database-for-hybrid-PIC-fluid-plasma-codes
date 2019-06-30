@@ -47,7 +47,7 @@ Type = 'BINARY'
 specie1 = 'e-'
 specie2 = 'Kr'
 process = 'i1'
-file_name = ''
+file_name = 'model_GRYZINSKI.txt'
 
 Velocity_parallel = 14.142 # [eV]
 Velocity_perpendicular = 14.142 # [eV]
