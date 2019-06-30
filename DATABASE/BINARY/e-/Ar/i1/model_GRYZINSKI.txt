@@ -47,7 +47,7 @@
                        'UNITS': eV,
                        'VALUES': 15.7596
                            },
-         'Xi': {
+         'xi': {
                 'UNITS': dimensionless,
                 'VALUES': 8
                     },

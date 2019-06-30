@@ -46,15 +46,15 @@
                        'UNITS': eV,
                        'VALUES': 15.7596
                            },
-         'Xi': {
+         'xi': {
                 'UNITS': dimensionless,
                 'VALUES': 8
                     },
-         'Beta_1': {
+         'beta_1': {
                     'UNITS': dimensionless,
                     'VALUES': 0.82
                     },
-         'Beta_2': {
+         'beta_2': {
                     'UNITS': dimensionless,
                     'VALUES': 1.0
                     },
